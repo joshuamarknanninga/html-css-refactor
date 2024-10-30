@@ -1,0 +1,151 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e8491d;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+section {
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+/* Section Animations */
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+.slide-in {
+    animation: slideIn 1s forwards;
+}
+
+.zoom-in {
+    animation: zoomIn 1s forwards;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Buttons */
+button {
+    background-color: #e8491d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #cf3e16;
+    transform: scale(1.05);
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+form button {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
