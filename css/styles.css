@@ -10,7 +10,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
+    color: #1864b6;
 }
 
 /* Header */
@@ -60,7 +60,7 @@ section {
     padding: 20px;
     border-radius: 8px;
     max-width: 800px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(20, 157, 220, 0.1);
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 1s forwards;
@@ -113,7 +113,7 @@ button {
 }
 
 button:hover {
-    background-color: #cf3e16;
+    background-color: #55f550;
     transform: scale(1.05);
 }
 
@@ -129,7 +129,7 @@ form label {
 
 form input, form textarea {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #51aee1;
     border-radius: 4px;
     resize: vertical;
 }
@@ -141,8 +141,8 @@ form button {
 
 /* Footer */
 footer {
-    background-color: #35424a;
-    color: #ffffff;
+    background-color: #2573a4;
+    color: #c9dcf2;
     text-align: center;
     padding: 10px 0;
     position: fixed;
